@@ -23,16 +23,23 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
     /// </summary>
     public partial class MainWindow : Window
     {
-      public  string_for_lisp strLisp = new string_for_lisp();
+        public string_for_lisp strLisp = new string_for_lisp();
+        public List<string> list_lay_name = new List<string>();
+        public List<string> textboxFirsts = new List<string>();
+        public List<string> textboxSeconds = new List<string>();
+        public List<string> textboxThrees = new List<string>();
+        private int count;
+
         public MainWindow()
         {
             InitializeComponent();
+            string_for_lisp.CheckDate();
         }
-        
+
 
         private void Button_Save_as_Click(object sender, RoutedEventArgs e)
         {
-            
+            addlay();
             TextBlockCount.Text = "кабелей - " + textboxLayName.LineCount.ToString();
             SaveFileDialog dialog = new SaveFileDialog();
             dialog.Filter = "LSP Files(*.lsp)|*.lsp|All(*.*)|*";
@@ -55,6 +62,39 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+        public void addlay()
+        {
+            // расделителем может служить один символ, поэтому строку создаём, т е массив символов
+            string[] separator = { "\n", "\r" };
+            // добавляем данные в список из текстбокса textboxLayName 
+            string[] massTextBoxLayname = textboxLayName.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+            // добавляем данные в список из текстбокса textboxFirst
+            string[] masstextboxFirst = textboxFirst.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+            // добавляем данные в список из текстбокса textboxSecond
+            string[] masstextboxSecond = textboxSecond.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+            // добавляем данные в список из текстбокса textboxThree
+            string[] masstextboxThree = textboxThree.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+
+            // добавляем в список значения из текстбокса имя слоя  и координаты
+            foreach (var item in massTextBoxLayname)
+            {
+                list_lay_name.Add(massTextBoxLayname[count]);
+                if (masstextboxFirst.Length > 0)
+                {
+                    textboxFirsts.Add(masstextboxFirst[count]);
+                }
+                if (masstextboxSecond.Length > 0)
+                {
+                    textboxSeconds.Add(masstextboxSecond[count]);
+                }
+                if (masstextboxThree.Length >0)
+                {
+                    textboxThrees.Add(masstextboxThree[count]);
+                }
+                count++;
+            }
+            textboxLayName.Text.ToString();
         }
     }
 }

@@ -22,6 +22,8 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
             // строка из лиспа для автокада - середина
             return sb;
         }
+
+      
         // перебираем текстбоксы, создаем слой 
         public  StringBuilder second_lisp(string str)
         {
@@ -61,11 +63,8 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
             }
             else
             {
-
                 MessageBox.Show("Работайте до   " + dt2.ToString());
             }
-
         }
-
     }
 }
