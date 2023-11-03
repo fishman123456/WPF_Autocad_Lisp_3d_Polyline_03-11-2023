@@ -34,6 +34,17 @@ namespace Autocad_lisp_WPF_insert_block_26_03_2023
             sb.Append(")\t\t'( ");
             return sb;
         }
+        public StringBuilder four_lisp(string str)
+        {
+            sb.Append(")\t\"\")");
+            return sb;
+        }
+        public StringBuilder ends(string str)
+        {
+            sb.Append("\n(alert \"You win\")\n");
+            sb.Append(")");
+            return sb;
+        }
         // проверка по дате использования
         public static void CheckDate()
         {
