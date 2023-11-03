@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 // 26-03-2023, мужик за стеной бурит перфоратором зае.....
-namespace Autocad_lisp_WPF_insert_block_26_03_2023
+namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
 {
     public class string_for_lisp
     {
