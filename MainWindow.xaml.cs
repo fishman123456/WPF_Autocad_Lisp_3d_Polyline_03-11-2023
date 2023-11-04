@@ -102,7 +102,6 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
                         firstCoor += "\n" + " '(" + masstextboxSecond[count2] + ")" + "\n";
                         count2++;
                     }
-                    
                     strBild.Append(firstCoor);
                     // собираем третьи (последние) координаты полилинии
                     strBild.Append("\n" + @" '(" + masstextboxThree[count1] + @") """")");

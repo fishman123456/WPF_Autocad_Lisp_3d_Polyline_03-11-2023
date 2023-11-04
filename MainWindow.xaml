@@ -40,14 +40,14 @@
         <TextBlock x:Name="TextBlockCount" TextWrapping="Wrap" Text="-" Grid.ColumnSpan="1" 
                           HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Row="8" Grid.Column="1"/>
         <!--ввод данных -->
-        <TextBox Name="textboxLayName"  Grid.Row="1" Grid.Column="0" Grid.RowSpan="7" Margin="10"  
-          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text="первый"/>
-        <TextBox Name="textboxFirst"  Grid.Row="1" Grid.Column="1" Grid.RowSpan="7" Margin="10"  
-          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text="10        20          30"/>
-        <TextBox Name="textboxSecond"  Grid.Row="1" Grid.Column="2" Grid.RowSpan="7" Margin="10"  
-          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text ="100        200          300"/>
-        <TextBox Name="textboxThree"  Grid.Row="1" Grid.Column="3" Grid.RowSpan="7" Margin="10"  
-          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text ="1000        2000          3000"/>
+        <TextBox x:Name ="textboxLayName"  Grid.Row="1" Grid.Column="0" Grid.RowSpan="7" Margin="10"  
+          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text="первый" x:FieldModifier="public"/>
+        <TextBox x:Name ="textboxFirst"  Grid.Row="1" Grid.Column="1" Grid.RowSpan="7" Margin="10"  
+          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text="10        20          30" x:FieldModifier="public"/>
+        <TextBox x:Name="textboxSecond"  Grid.Row="1" Grid.Column="2" Grid.RowSpan="7" Margin="10"  
+          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text ="100        200          300" x:FieldModifier="public"/>
+        <TextBox x:Name ="textboxThree"  Grid.Row="1" Grid.Column="3" Grid.RowSpan="7" Margin="10"  
+          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text ="1000        2000          3000" x:FieldModifier="public"/>
         
         <!-- кнопки управления-->
         <Button Name="Button_Save_as" Content="Сохранить в файл" Grid.Row="9" Grid.Column="3" Grid.ColumnSpan="1"

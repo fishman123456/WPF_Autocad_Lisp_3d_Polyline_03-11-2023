@@ -8,7 +8,7 @@ using System.Windows.Controls;
 // 26-03-2023, мужик за стеной бурит перфоратором зае.....
 namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
 {
-    public class string_for_lisp : Window
+    public class string_for_lisp 
     {
        private StringBuilder sb = new StringBuilder();
           // функция записывает в строку  файл lisp
@@ -49,12 +49,7 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
                 MessageBox.Show("Работайте до   " + dt2.ToString());
             }
         }
-        TextBox textBox = new TextBox();
-        public void WorkTextbox()
-        {
-            MessageBox.Show("вызвали текстбокс");
-            textBox.Text = "вызвали текстбокс";
-        }
+        
         
     }
    
