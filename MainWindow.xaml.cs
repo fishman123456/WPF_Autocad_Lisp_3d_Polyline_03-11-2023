@@ -24,23 +24,23 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
     public partial class MainWindow : Window
     {
         public string_for_lisp strLisp = new string_for_lisp();
-        public List<string> list_lay_name = new List<string>();
-        public List<string> textboxFirsts = new List<string>();
-        public List<string> textboxSeconds = new List<string>();
-        public List<string> textboxThrees = new List<string>();
-        private int count;
+        StringBuilder strBild = new StringBuilder();
+        private int count1;
+        private int count2;
 
         public MainWindow()
         {
             InitializeComponent();
-            string_for_lisp.CheckDate();
+            //string_for_lisp.CheckDate();
         }
 
-
+        // метод сохранения в файл
         private void Button_Save_as_Click(object sender, RoutedEventArgs e)
         {
             addlay();
+            string sborka = strLisp.lispbeginning().ToString() + strBild.ToString().ToString() + strLisp.lispending().ToString();
             TextBlockCount.Text = "кабелей - " + textboxLayName.LineCount.ToString();
+            // метод записи файла 
             SaveFileDialog dialog = new SaveFileDialog();
             dialog.Filter = "LSP Files(*.lsp)|*.lsp|All(*.*)|*";
             dialog.RestoreDirectory = true;
@@ -53,8 +53,7 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
                     StreamWriter sw = new StreamWriter(path, false);
                     using (sw)
                     {
-
-                        sw.Write(strLisp.first_lisp());
+                        sw.Write(sborka);
                     }
                 }
             }
@@ -62,9 +61,12 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
             {
                 MessageBox.Show(ex.ToString());
             }
+            sborka.DefaultIfEmpty();
         }
-        public void addlay()
+        public string addlay()
         {
+            // разделение текстбоксов на строки
+            #region
             // расделителем может служить один символ, поэтому строку создаём, т е массив символов
             string[] separator = { "\n", "\r" };
             // добавляем данные в список из текстбокса textboxLayName 
@@ -75,26 +77,66 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
             string[] masstextboxSecond = textboxSecond.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
             // добавляем данные в список из текстбокса textboxThree
             string[] masstextboxThree = textboxThree.Text.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+            // создаем 
+            
+            // стринг для второй координаты
+            string firstCoor = string.Empty;
+            #endregion
 
-            // добавляем в список значения из текстбокса имя слоя  и координаты
-            foreach (var item in massTextBoxLayname)
+            // (command "_.-layer" "_m" "1091-III-D3-K15" "")
+            //(command "_.3Dpoly" '(206236	-47787	0)'(95377   52133   0) "")
+            try
             {
-                list_lay_name.Add(massTextBoxLayname[count]);
-                if (masstextboxFirst.Length > 0)
+                // добавляем в список значения из текстбокса имя слоя  и координаты трех textbox
+                // причем у второго тексбокса может быть много строк
+                foreach (var item in massTextBoxLayname)
                 {
-                    textboxFirsts.Add(masstextboxFirst[count]);
+                    // добавляем имя слоя в строку
+                    strBild.Append("\n" + @"(command ""_.-layer"" ""_m"" "" " + massTextBoxLayname[count1]  + @" "" """")"+"\n");
+                    // собираем первые координаты полилинии
+                    strBild.Append( "\n" + @"(command ""_.3Dpoly""");
+                    strBild.Append("\n" + " '(" + masstextboxFirst[count1] + ")");
+                    // собираем средние координаты полилинии
+                    foreach (var itemt in masstextboxSecond)
+                    {
+                        firstCoor += "\n" + " '(" + masstextboxSecond[count2] + ")" + "\n";
+                        count2++;
+                    }
+                    
+                    strBild.Append(firstCoor);
+                    // собираем третьи (последние) координаты полилинии
+                    strBild.Append("\n" + @" '(" + masstextboxThree[count1] + @") """")");
+                    count1++;
+                    count2 = 0;
                 }
-                if (masstextboxSecond.Length > 0)
-                {
-                    textboxSeconds.Add(masstextboxSecond[count]);
-                }
-                if (masstextboxThree.Length >0)
-                {
-                    textboxThrees.Add(masstextboxThree[count]);
-                }
-                count++;
             }
-            textboxLayName.Text.ToString();
+            catch (Exception ex)
+            {
+                MessageBox.Show("проверьте количество!!!" + ex.Message);
+                count1 = 0; count2 = 0;
+            }
+            // обнуляем счетчики
+            finally { count1 = 0; count2 = 0; }
+            // возвращаем обьект StringBilder (строку)
+            return strBild.ToString();
+        }
+
+        private void Button_Close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button_Bild_Click(object sender, RoutedEventArgs e)
+        {
+            addlay();
+        }
+
+        private void Button_Clear_Click(object sender, RoutedEventArgs e)
+        {
+            textboxLayName.Text = string.Empty;
+            textboxFirst.Text = string.Empty;
+            textboxSecond.Text = string.Empty;
+            textboxThree.Text = string.Empty;
         }
     }
 }

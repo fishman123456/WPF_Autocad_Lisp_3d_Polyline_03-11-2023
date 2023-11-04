@@ -12,10 +12,6 @@
             <ColumnDefinition Width="100*"/>
             <ColumnDefinition Width="100*"/>
             <ColumnDefinition Width="100*"/>
-
-
-
-
         </Grid.ColumnDefinitions>
         <!-- 9 строк высотой 50  9 столбцов шириной 100 итого высота 450 ширина 800  -->
         <Grid.RowDefinitions>
@@ -32,8 +28,7 @@
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
 
-            <!-- текст блоки описание столбцов-->
-
+        <!-- текст блоки описание textbox для ввода данных-->
         <TextBlock x:Name="textBlockLayerName" TextWrapping="Wrap" Text="имя слоя" Grid.ColumnSpan="1" 
                           HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Row="0" Grid.Column="0"/>
         <TextBlock x:Name="TextBlockFirstCoor" TextWrapping="Wrap" Text="первая координата" Grid.ColumnSpan="1" 
@@ -43,19 +38,24 @@
         <TextBlock x:Name="TextBlockThreeCoor" TextWrapping="Wrap" Text="третья координата" Grid.ColumnSpan="1" 
                           HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Row="0" Grid.Column="3"/>
         <TextBlock x:Name="TextBlockCount" TextWrapping="Wrap" Text="-" Grid.ColumnSpan="1" 
-                    HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Row="9" Grid.Column="1"/>
-
+                          HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Row="8" Grid.Column="1"/>
+        <!--ввод данных -->
         <TextBox Name="textboxLayName"  Grid.Row="1" Grid.Column="0" Grid.RowSpan="7" Margin="10"  
-          AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text="первый"/>
         <TextBox Name="textboxFirst"  Grid.Row="1" Grid.Column="1" Grid.RowSpan="7" Margin="10"  
-          AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text="10        20          30"/>
         <TextBox Name="textboxSecond"  Grid.Row="1" Grid.Column="2" Grid.RowSpan="7" Margin="10"  
-          AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text ="100        200          300"/>
         <TextBox Name="textboxThree"  Grid.Row="1" Grid.Column="3" Grid.RowSpan="7" Margin="10"  
-          AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
-
-        <Button Name="Button_Save_as" Content="Сохранить в файл" Grid.Row="9" Grid.Column="4" Grid.ColumnSpan="2"
+          AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Text ="1000        2000          3000"/>
+        
+        <!-- кнопки управления-->
+        <Button Name="Button_Save_as" Content="Сохранить в файл" Grid.Row="9" Grid.Column="3" Grid.ColumnSpan="1"
          Margin="5" Click="Button_Save_as_Click"/>
-
+        <Button Name="Button_Close" Content="Выход" Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="1"
+         Margin="5" Click="Button_Close_Click" />
+        <Button Name="Button_Bild" Content="Собрать" Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="1"
+         Margin="5" Click="Button_Bild_Click"  />
+        <Button Name="Button_Clear" Content="очистить" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="1" Margin="5" Click="Button_Clear_Click"/>
     </Grid>
 </Window>

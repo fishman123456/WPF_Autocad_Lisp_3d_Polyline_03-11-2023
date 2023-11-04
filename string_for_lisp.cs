@@ -4,49 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 // 26-03-2023, мужик за стеной бурит перфоратором зае.....
 namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
 {
-    public class string_for_lisp
+    public class string_for_lisp : Window
     {
        private StringBuilder sb = new StringBuilder();
-
-
-        // функция записывает в строку начало файла lsp
-        public  StringBuilder first_lisp()
+          // функция записывает в строку  файл lisp
+        public  StringBuilder lispbeginning()
         {
+            // начало файла lisp
             sb.Append ("");
             sb.Append("(defun  C:PL100 (/ x1 x2 x3)\n");
-            sb.Append("(vl-load-com)\n)");
-            sb.Append(" (command \"_.-layer\" \"_m\" \"\n)");
-            // строка из лиспа для автокада - середина
+            sb.Append("(vl-load-com)\n");
+            // вставляем создание нового слоя и построение 3д полилинии
             return sb;
         }
-
-      
-        // перебираем текстбоксы, создаем слой 
-        public  StringBuilder second_lisp(string str)
+        public StringBuilder lispending()
         {
-            sb.Append("(command \"_.3Dpoly\" '( ");
-            return sb;
-        }
-        // функция записывает в окончание начало файла lsp 
-        public StringBuilder third_lisp(string str)
-        {
-            sb.Append(")\t\t'( ");
-            return sb;
-        }
-        public StringBuilder four_lisp(string str)
-        {
-            sb.Append(")\t\"\")");
-            return sb;
-        }
-        public StringBuilder ends(string str)
-        {
+            StringBuilder sb = new StringBuilder();
+            // завершение файла
             sb.Append("\n(alert \"You win\")\n");
             sb.Append(")");
             return sb;
         }
+
         // проверка по дате использования
         public static void CheckDate()
         {
@@ -66,5 +49,13 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
                 MessageBox.Show("Работайте до   " + dt2.ToString());
             }
         }
+        TextBox textBox = new TextBox();
+        public void WorkTextbox()
+        {
+            MessageBox.Show("вызвали текстбокс");
+            textBox.Text = "вызвали текстбокс";
+        }
+        
     }
+   
 }
