@@ -31,13 +31,13 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
         public MainWindow()
         {
             InitializeComponent();
-            //string_for_lisp.CheckDate();
+            string_for_lisp.CheckDate();
         }
 
         // метод сохранения в файл
         private void Button_Save_as_Click(object sender, RoutedEventArgs e)
         {
-            addlay();
+        addlay();
             string sborka = strLisp.lispbeginning().ToString() + strBild.ToString().ToString() + strLisp.lispending().ToString();
             TextBlockCount.Text = "кабелей - " + textboxLayName.LineCount.ToString();
             // метод записи файла 
@@ -61,8 +61,10 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
             {
                 MessageBox.Show(ex.ToString());
             }
-            sborka.DefaultIfEmpty();
-        }
+            sborka = "";
+            // победа, я новый обьект создаю 06-11-2023
+            strLisp = new string_for_lisp();
+    }
         public string addlay()
         {
             // разделение текстбоксов на строки
@@ -80,7 +82,7 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
             // создаем 
             
             // стринг для второй координаты
-            string firstCoor = string.Empty;
+            string firstCoor = "";
             #endregion
 
             // (command "_.-layer" "_m" "1091-III-D3-K15" "")
@@ -111,7 +113,7 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
             }
             catch (Exception ex)
             {
-                MessageBox.Show("проверьте количество!!!" + ex.Message);
+                MessageBox.Show("проверьте количество!!!" +"\n"+ ex.Message);
                 count1 = 0; count2 = 0;
             }
             // обнуляем счетчики

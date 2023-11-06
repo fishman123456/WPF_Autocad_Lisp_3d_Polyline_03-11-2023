@@ -11,6 +11,7 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
     public class string_for_lisp 
     {
        private StringBuilder sb = new StringBuilder();
+        public string_for_lisp() { }
           // функция записывает в строку  файл lisp
         public  StringBuilder lispbeginning()
         {
