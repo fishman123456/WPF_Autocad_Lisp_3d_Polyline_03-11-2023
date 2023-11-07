@@ -101,15 +101,15 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
                     // собираем средние координаты полилинии
                     foreach (var itemt in masstextboxSecond)
                     {
-                        firstCoor += "\n" + " '(" + masstextboxSecond[count2] + ")" + "\n";
+                        strBild.Append( "\n" + " '(" + masstextboxSecond[count2] + ")" + "\n");
                         count2++;
                     }
-                    strBild.Append(firstCoor);
+                    count2 = 0;
                     // собираем третьи (последние) координаты полилинии
                     strBild.Append("\n" + @" '(" + masstextboxThree[count1] + @") """")");
                     count1++;
-                    count2 = 0;
                 }
+                count1 = 0;
             }
             catch (Exception ex)
             {
@@ -134,10 +134,12 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
 
         private void Button_Clear_Click(object sender, RoutedEventArgs e)
         {
+            strBild = new StringBuilder();
             textboxLayName.Text = string.Empty;
             textboxFirst.Text = string.Empty;
             textboxSecond.Text = string.Empty;
             textboxThree.Text = string.Empty;
+            TextBlockCount.Text = "-";
         }
     }
 }
