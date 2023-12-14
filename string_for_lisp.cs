@@ -47,7 +47,7 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
             }
             else
             {
-                MessageBox.Show("Работайте до   " + dt2.ToString());
+                //MessageBox.Show("Работайте до   " + dt2.ToString());
             }
         }
         
