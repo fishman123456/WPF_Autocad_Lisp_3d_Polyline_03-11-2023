@@ -17,8 +17,11 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
         {
             // начало файла lisp
             sb.Append ("");
+           
             sb.Append("(defun  C:PL100 (/ x1 x2 x3)\n");
             sb.Append("(vl-load-com)\n");
+            // отключаем привязки
+            sb.Append("(setvar \"ORTHOMODE\" 0)\r\n  (setvar \"SNAPMODE\" 0)\r\n  (setvar \"OSMODE\" 0)");
             // вставляем создание нового слоя и построение 3д полилинии
             return sb;
         }
