@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel>
             <TextBox x:Name="textone" FontSize="20" Margin="10" 
-                     Height="200" ScrollViewer.VerticalScrollBarVisibility="Auto" >
+                     Height="200" ScrollViewer.VerticalScrollBarVisibility="Auto" IsEnabled="False"  >
             </TextBox>
         </StackPanel>
     </Grid>

@@ -125,6 +125,8 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
         private void Button_Close_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+            // закрытие программы
+            System.Windows.Application.Current.Shutdown();
         }
 
         private void Button_Clear_Click(object sender, RoutedEventArgs e)

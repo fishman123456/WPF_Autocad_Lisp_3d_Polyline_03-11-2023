@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Autocad_Lisp_3d_Polyline_03_11_2023"
         mc:Ignorable="d"
-        Title="14-02-2024 Программа для 3D полилиний *.lisp " Height="450" Width="800">
+        Title="14-02-2024 Программа для 3D полилиний *.lisp " Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100*"/>
