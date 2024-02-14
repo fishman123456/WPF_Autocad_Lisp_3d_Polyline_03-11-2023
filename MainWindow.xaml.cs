@@ -140,7 +140,25 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
         private void Button_Help_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Координаты заполняем через пробел"+"\n"+
-                "Имя слоя не содержит <>/\":;?`*|`,=`]\"");
+                "Имя слоя не содержит:"+"\n"+
+                "<" + "\n" + 
+                ">" + "\n" +
+                "/" + "\n" +
+                "\"" + "\n" +
+                ":" + "\n" +
+                ";" + "\n" +
+                "?" + "\n" +
+                "`" + "\n" + 
+                "*" + "\n" +
+                "|" + "\n" +
+                "`" + "\n" +
+                "," + "\n" +
+                "=" + "\n" +
+                "`" + "\n" +
+                "]" + "\n" +
+                "\"");
+            Window1 window1 = new Window1();
+            window1.Show();
         }
     }
 }
