@@ -38,7 +38,7 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
         public static void CheckDate()
         {
             DateTime dt1 = DateTime.Now;
-            DateTime dt2 = DateTime.Parse("01/01/2024");
+            DateTime dt2 = DateTime.Parse("20/03/2024");
             Window w1 = new Window();
 
             if (dt1.Date > dt2.Date)

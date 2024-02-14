@@ -127,11 +127,6 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
             this.Close();
         }
 
-        private void Button_Bild_Click(object sender, RoutedEventArgs e)
-        {
-            addlay();
-        }
-
         private void Button_Clear_Click(object sender, RoutedEventArgs e)
         {
             strBild = new StringBuilder();
@@ -140,6 +135,12 @@ namespace WPF_Autocad_Lisp_3d_Polyline_03_11_2023
             textboxSecond.Text = string.Empty;
             textboxThree.Text = string.Empty;
             TextBlockCount.Text = "-";
+        }
+
+        private void Button_Help_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Координаты заполняем через пробел"+"\n"+
+                "Имя слоя не содержит <>/\":;?`*|`,=`]\"");
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Autocad_Lisp_3d_Polyline_03_11_2023"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="14-02-2024 Программа для 3D полилиний *.lisp " Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100*"/>
@@ -31,12 +31,16 @@
         <!-- текст блоки описание textbox для ввода данных-->
         <TextBlock x:Name="textBlockLayerName" TextWrapping="Wrap" Text="имя слоя" Grid.ColumnSpan="1" 
                           HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+        
         <TextBlock x:Name="TextBlockFirstCoor" TextWrapping="Wrap" Text="первая координата" Grid.ColumnSpan="1" 
                           HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Row="0" Grid.Column="1"/>
+        
         <TextBlock x:Name="TextBlockSecondCoor" TextWrapping="Wrap" Text="вторая координата" Grid.ColumnSpan="1" 
                           HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Row="0" Grid.Column="2"/>
+        
         <TextBlock x:Name="TextBlockThreeCoor" TextWrapping="Wrap" Text="третья координата" Grid.ColumnSpan="1" 
                           HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Row="0" Grid.Column="3"/>
+        
         <TextBlock x:Name="TextBlockCount" TextWrapping="Wrap" Text="-" Grid.ColumnSpan="1" 
                           HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Grid.Row="8" Grid.Column="1"/>
         <!--ввод данных -->
@@ -52,10 +56,14 @@
         <!-- кнопки управления-->
         <Button Name="Button_Save_as" Content="Сохранить в файл" Grid.Row="9" Grid.Column="3" Grid.ColumnSpan="1"
          Margin="5" Click="Button_Save_as_Click"/>
+        
         <Button Name="Button_Close" Content="Выход" Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="1"
          Margin="5" Click="Button_Close_Click" />
-        <Button Name="Button_Bild" Content="Собрать" Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="1"
-         Margin="5" Click="Button_Bild_Click"  />
-        <Button Name="Button_Clear" Content="очистить" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="1" Margin="5" Click="Button_Clear_Click"/>
+        
+        <Button Name="Button_Help" Content="Помощь" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="1"
+         Margin="5" Click="Button_Help_Click"   />
+        
+        <Button Name="Button_Clear" Content="очистить" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="1" 
+                Margin="5" Click="Button_Clear_Click"/>
     </Grid>
 </Window>
