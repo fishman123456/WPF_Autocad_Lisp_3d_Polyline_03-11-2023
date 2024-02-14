@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57C5BA02-964D-469C-AF27-B3539D8B220A}|WPF_Autocad_Lisp_3d_Polyline_03-11-2023.csproj|c:\\users\\fishman\\documents\\github\\wpf_autocad_lisp_3d_polyline_03-11-2023\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57C5BA02-964D-469C-AF27-B3539D8B220A}|WPF_Autocad_Lisp_3d_Polyline_03-11-2023.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{57C5BA02-964D-469C-AF27-B3539D8B220A}|WPF_Autocad_Lisp_3d_Polyline_03-11-2023.csproj|c:\\users\\fishman\\documents\\github\\wpf_autocad_lisp_3d_polyline_03-11-2023\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{57C5BA02-964D-469C-AF27-B3539D8B220A}|WPF_Autocad_Lisp_3d_Polyline_03-11-2023.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57C5BA02-964D-469C-AF27-B3539D8B220A}|WPF_Autocad_Lisp_3d_Polyline_03-11-2023.csproj|c:\\users\\fishman\\documents\\github\\wpf_autocad_lisp_3d_polyline_03-11-2023\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57C5BA02-964D-469C-AF27-B3539D8B220A}|WPF_Autocad_Lisp_3d_Polyline_03-11-2023.csproj|solutionrelative:window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57C5BA02-964D-469C-AF27-B3539D8B220A}|WPF_Autocad_Lisp_3d_Polyline_03-11-2023.csproj|c:\\users\\fishman\\documents\\github\\wpf_autocad_lisp_3d_polyline_03-11-2023\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{57C5BA02-964D-469C-AF27-B3539D8B220A}|WPF_Autocad_Lisp_3d_Polyline_03-11-2023.csproj|solutionrelative:window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{57C5BA02-964D-469C-AF27-B3539D8B220A}|WPF_Autocad_Lisp_3d_Polyline_03-11-2023.csproj|c:\\users\\fishman\\documents\\github\\wpf_autocad_lisp_3d_polyline_03-11-2023\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57C5BA02-964D-469C-AF27-B3539D8B220A}|WPF_Autocad_Lisp_3d_Polyline_03-11-2023.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57C5BA02-964D-469C-AF27-B3539D8B220A}|WPF_Autocad_Lisp_3d_Polyline_03-11-2023.csproj|c:\\users\\fishman\\documents\\github\\wpf_autocad_lisp_3d_polyline_03-11-2023\\string_for_lisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 253,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,32 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Window1.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\\Window1.xaml.cs",
-              "RelativeDocumentMoniker": "Window1.xaml.cs",
-              "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\\Window1.xaml.cs",
-              "RelativeToolTip": "Window1.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T08:35:07.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Window1.xaml",
-              "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\\Window1.xaml",
-              "RelativeDocumentMoniker": "Window1.xaml",
-              "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\\Window1.xaml",
-              "RelativeToolTip": "Window1.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-14T08:26:53.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "expiriens.cs",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\\expiriens.cs",
               "RelativeDocumentMoniker": "expiriens.cs",
@@ -96,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -108,20 +75,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAxwJcAAAAcAAAA",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAiwJIAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-14T04:35:14.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "string_for_lisp.cs",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\\string_for_lisp.cs",
               "RelativeDocumentMoniker": "string_for_lisp.cs",

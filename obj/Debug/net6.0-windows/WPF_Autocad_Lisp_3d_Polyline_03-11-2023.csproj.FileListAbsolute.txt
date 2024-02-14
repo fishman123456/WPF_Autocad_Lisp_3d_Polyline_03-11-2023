@@ -59,5 +59,3 @@ C:\Users\Fishman\Documents\GitHub\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\obj\De
 C:\Users\Fishman\Documents\GitHub\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\obj\Debug\net6.0-windows\WPF_Autocad_Lisp_3d_Polyline_03-11-2023.pdb
 C:\Users\Fishman\Documents\GitHub\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\obj\Debug\net6.0-windows\WPF_Autocad_Lisp_3d_Polyline_03-11-2023.genruntimeconfig.cache
 C:\Users\Fishman\Documents\GitHub\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\obj\Debug\net6.0-windows\ref\WPF_Autocad_Lisp_3d_Polyline_03-11-2023.dll
-C:\Users\Fishman\Documents\GitHub\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\obj\Debug\net6.0-windows\Window1.g.cs
-C:\Users\Fishman\Documents\GitHub\WPF_Autocad_Lisp_3d_Polyline_03-11-2023\obj\Debug\net6.0-windows\Window1.baml

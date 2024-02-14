@@ -65,5 +65,6 @@
         
         <Button Name="Button_Clear" Content="очистить" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="1" 
                 Margin="5" Click="Button_Clear_Click"/>
+        
     </Grid>
 </Window>
